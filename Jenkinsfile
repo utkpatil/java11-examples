@@ -1,5 +1,7 @@
 pipeline {
-agent any
+agent {
+  label 'utknode'
+}
 stages {
   stage('SCM code') {
    steps {
